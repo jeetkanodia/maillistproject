@@ -21,8 +21,6 @@ app.listen(3000, ()=>{
     console.log("Server up on 3000");
 })
 
-// updated the app.js
-
 //API KEY
 // 479db8368e7e3aba8d03a67212574af7-us21
 
