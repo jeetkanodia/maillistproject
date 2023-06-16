@@ -13,7 +13,20 @@ app.post("/" , (req,res)=>{
     const fName = req.body.fName;
     const lName = req.body.lName;
     const email = req.body.email;
-    console.log(email)
+    const data = {
+        members: [
+            {
+                email_address: email,
+                status:"subscribed",
+                 merge_fields:{
+                    FNAME: fName,
+                    LNAME : lName
+                 }
+            }
+        ]
+    };
+    const jsonData = JSON.stringify(data);
+    
 })
 
 
